@@ -1,0 +1,32 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Lista de fotos
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Lista de fotos</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Suas Imagens salvas</ion-card-title>
+      <ion-card-subtitle>Tão boas</ion-card-subtitle>
+      <ion-list>
+        <ion-item *ngFor="let photo of photoService.photos; index as position">
+          <ion-thumbnail slot="start">
+            <ion-img [src]="photo.webviewPath"></ion-img>
+          </ion-thumbnail>
+          <ion-label>Foto {{position}}</ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-card-header>
+  </ion-card>
+
+  <!-- <app-explore-container name="Tab 1 page"></app-explore-container> -->
+</ion-content>

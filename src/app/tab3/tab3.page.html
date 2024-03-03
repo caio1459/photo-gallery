@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Ordenar Fotos
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Ordenar Fotos</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-list>
+    <ion-reorder-group [disabled]="false" (ionItemReorder)="handleReorder($event)">
+      <ion-item *ngFor="let photo of photoService.photos; index as position">
+        <ion-thumbnail slot="start">
+          <ion-img [src]="photo.webviewPath"></ion-img>
+        </ion-thumbnail>
+        <ion-label>Foto {{position}}</ion-label>
+        <ion-reorder slot="end"></ion-reorder>
+      </ion-item>
+    </ion-reorder-group>
+  </ion-list>
+
+  <!-- <app-explore-container name="Tab 3 page"></app-explore-container> -->
+</ion-content>
