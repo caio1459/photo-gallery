@@ -1,7 +1,7 @@
 # <h1 align="center">Projeto Introdutório ao Ionic</h1>
 
 ## 📗 Sobre o Projeto
-Este projeto seguindo a ducomentação oficial do [Ionic](https://ionicframework.com/docs/angular/your-first-app), onde a ideia principal é gerar um aplicativo de fotos multiplataforma.
+Este projeto segue a documentação oficial do [Ionic](https://ionicframework.com/docs/angular/your-first-app), onde a ideia principal é gerar um aplicativo de fotos multiplataforma.
 
 ## 🔨 Ferramentas e Bibliotecas
 - [Ionic](https://ionicframework.com/docs)
